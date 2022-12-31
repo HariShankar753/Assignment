@@ -1,0 +1,16 @@
+package assignment;
+import java.util.*;
+public class Assignment10 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter Principle, Rate, Time(in years)");
+		double principle = in.nextDouble();
+		double rate = in.nextDouble();
+		double time = in.nextDouble();
+		double compound_interest = principle * (Math.pow((1 + rate / 100), time)) - principle;
+	    System.out.println("The Compound Interest is : " + compound_interest);
+
+	}
+
+}
